@@ -53,26 +53,31 @@ public class User implements UserDetails {
 		this.password = password;
 	}
 
+	@Transient
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		return AuthorityUtils.createAuthorityList("Role_USER");
 	}
 
+	@Transient
 	@Override
 	public boolean isAccountNonExpired() {
 		return true;
 	}
 
+	@Transient
 	@Override
 	public boolean isAccountNonLocked() {
 		return true;
 	}
 
+	@Transient
 	@Override
 	public boolean isCredentialsNonExpired() {
 		return true;
 	}
 
+	@Transient
 	@Override
 	public boolean isEnabled() {
 		return true;

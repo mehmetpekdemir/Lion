@@ -12,7 +12,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class GenericResponse {
+public final class GenericResponse {
 
 	private String message;
 

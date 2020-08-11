@@ -21,7 +21,7 @@ public class LionApplication {
 	}
 
 	@Bean
-	public CommandLineRunner createInitialUsers(UserService userService) {
+	CommandLineRunner createInitialUsers(UserService userService) {
 		return (args) -> {
 			UserCreateDTO user = new UserCreateDTO();
 			user.setUsername("User1");

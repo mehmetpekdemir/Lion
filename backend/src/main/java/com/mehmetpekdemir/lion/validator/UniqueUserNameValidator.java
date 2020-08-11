@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
  * @since 1.0
  */
 @RequiredArgsConstructor //Constructor Injection with lombok
-public class UniqueUserNameValidator implements ConstraintValidator<UniqueUserName, String> {
+public final class UniqueUserNameValidator implements ConstraintValidator<UniqueUserName, String> {
 
 	private final UserRepository userRepository;
 

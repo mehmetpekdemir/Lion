@@ -5,7 +5,6 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import com.mehmetpekdemir.lion.validator.FieldMatch;
-import com.mehmetpekdemir.lion.validator.UniqueUserName;
 
 import lombok.Data;
 
@@ -16,12 +15,7 @@ import lombok.Data;
  */
 @Data
 @FieldMatch(first = "password", second = "confirmPassword", message = "{lion.constraint.password.FieldMatch.message}")
-public class UserCreateDTO {
-
-	@NotNull(message = "{lion.constraint.username.NotNull.message}")
-	@Size(min = 4, max = 32, message = "{lion.constraint.username.Size.message}")
-	@UniqueUserName
-	private String username;
+public class UserUpdateDTO {
 
 	@NotNull(message = "{lion.constraint.displayname.NotNull.message}")
 	@Size(min = 3, max = 32, message = "{lion.constraint.displayname.Size.message}")
