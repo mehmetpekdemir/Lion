@@ -10,6 +10,6 @@ import com.mehmetpekdemir.lion.dto.UserViewDTO;
  */
 public interface UserService {
 
-	public UserViewDTO createUser(UserCreateDTO userCreateDTO);
+	UserViewDTO createUser(UserCreateDTO userCreateDTO);
 
 }

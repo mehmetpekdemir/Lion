@@ -1,7 +1,5 @@
 package com.mehmetpekdemir.lion.dto;
 
-import java.io.Serializable;
-
 import com.mehmetpekdemir.lion.entity.User;
 
 import lombok.Getter;
@@ -12,9 +10,7 @@ import lombok.Getter;
  * @since 1.0
  */
 @Getter
-public class UserViewDTO implements Serializable {
-
-	private static final long serialVersionUID = 1L;
+public class UserViewDTO {
 
 	private final Long id;
 	private final String username;

@@ -12,9 +12,9 @@ import com.mehmetpekdemir.lion.entity.User;
  */
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-	
+
 	User findByUsername(String username);
-	
+
 	boolean existsUserByUsername(String username);
 
 }

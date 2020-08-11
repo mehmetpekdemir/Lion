@@ -12,7 +12,7 @@ import org.springframework.beans.BeanWrapperImpl;
  * @author MEHMET PEKDEMIR
  * @since 1.0
  */
-public class FieldMatchValidator implements ConstraintValidator<FieldMatch, Object> {
+public final class FieldMatchValidator implements ConstraintValidator<FieldMatch, Object> {
 
 	private static final Logger LOG = LoggerFactory.getLogger(FieldMatchValidator.class);
 
